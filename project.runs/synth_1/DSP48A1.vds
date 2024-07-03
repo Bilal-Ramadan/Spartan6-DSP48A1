@@ -1,0 +1,384 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Feb 18 11:13:09 2024
+# Process ID: 644
+# Current directory: E:/Assignments/Digital/Project/project.runs/synth_1
+# Command line: vivado.exe -log DSP48A1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DSP48A1.tcl
+# Log file: E:/Assignments/Digital/Project/project.runs/synth_1/DSP48A1.vds
+# Journal file: E:/Assignments/Digital/Project/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DSP48A1.tcl -notrace
+Command: synth_design -top DSP48A1 -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29456 
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A1 [E:/Assignments/Digital/Project/test.v:1]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 446.738 ; gain = 86.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DSP48A1' [E:/Assignments/Digital/Project/test.v:1]
+	Parameter A0REG bound to: 0 - type: integer 
+	Parameter A1REG bound to: 1 - type: integer 
+	Parameter B0REG bound to: 0 - type: integer 
+	Parameter B1REG bound to: 1 - type: integer 
+	Parameter CREG bound to: 1 - type: integer 
+	Parameter DREG bound to: 1 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYOUTREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter CARRYINSEL bound to: OPMODE5 - type: string 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+WARNING: [Synth 8-6014] Unused sequential element A0_reg_reg was removed.  [E:/Assignments/Digital/Project/test.v:218]
+WARNING: [Synth 8-6014] Unused sequential element B0_reg_reg was removed.  [E:/Assignments/Digital/Project/test.v:226]
+INFO: [Synth 8-6155] done synthesizing module 'DSP48A1' (1#1) [E:/Assignments/Digital/Project/test.v:1]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port CARRYIN
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[17]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[16]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[15]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[14]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[13]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[12]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[11]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[10]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[9]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[8]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[7]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[6]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[5]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[4]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[3]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[2]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[1]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 479.602 ; gain = 119.012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 479.602 ; gain = 119.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 479.602 ; gain = 119.012
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Downloads/session_six/basys_master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [F:/Downloads/session_six/basys_master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Downloads/session_six/basys_master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [F:/Downloads/session_six/basys_master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [F:/Downloads/session_six/basys_master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [F:/Downloads/session_six/basys_master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 984.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 984.125 ; gain = 623.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 984.125 ; gain = 623.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 984.125 ; gain = 623.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Assignments/Digital/Project/test.v:138]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 984.125 ; gain = 623.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               18 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     48 Bit        Muxes := 2     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DSP48A1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               18 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     48 Bit        Muxes := 2     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'A1_reg_reg[17:0]' into 'A1_reg_reg[17:0]' [E:/Assignments/Digital/Project/test.v:219]
+INFO: [Synth 8-4471] merging register 'B1_reg_reg[17:0]' into 'B1_reg_reg[17:0]' [E:/Assignments/Digital/Project/test.v:227]
+WARNING: [Synth 8-6014] Unused sequential element A1_reg_reg was removed.  [E:/Assignments/Digital/Project/test.v:219]
+WARNING: [Synth 8-6014] Unused sequential element B1_reg_reg was removed.  [E:/Assignments/Digital/Project/test.v:227]
+DSP Report: Generating DSP M_reg_reg, operation Mode is: (C+A2*B2)'.
+DSP Report: register A1_reg_reg is absorbed into DSP M_reg_reg.
+DSP Report: register B1_reg_reg is absorbed into DSP M_reg_reg.
+DSP Report: register M_reg_reg is absorbed into DSP M_reg_reg.
+DSP Report: operator M_reg0 is absorbed into DSP M_reg_reg.
+DSP Report: operator M_reg0 is absorbed into DSP M_reg_reg.
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port CARRYIN
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[17]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[16]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[15]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[14]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[13]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[12]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[11]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[10]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[9]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[8]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[7]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[6]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[5]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[4]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[3]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[2]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[1]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:06 . Memory (MB): peak = 984.125 ; gain = 623.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DSP48A1     | (C+A2*B2)'  | 18     | 17     | 35     | -      | 36     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 1017.113 ; gain = 656.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 1017.484 ; gain = 656.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [E:/Assignments/Digital/Project/test.v:219]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 1028.789 ; gain = 668.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 1028.789 ; gain = 668.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 1028.789 ; gain = 668.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 1028.789 ; gain = 668.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 1028.789 ; gain = 668.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 1028.789 ; gain = 668.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 1028.789 ; gain = 668.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    44|
+|3     |DSP48E1_1 |     1|
+|4     |LUT1      |     2|
+|5     |LUT2      |     8|
+|6     |LUT3      |    84|
+|7     |LUT4      |    25|
+|8     |LUT5      |   130|
+|9     |LUT6      |    85|
+|10    |FDRE      |   160|
+|11    |IBUF      |   175|
+|12    |OBUF      |   152|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   867|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 1028.789 ; gain = 668.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:36 . Memory (MB): peak = 1028.789 ; gain = 163.676
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 1028.789 ; gain = 668.199
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 220 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 45 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:59 . Memory (MB): peak = 1028.789 ; gain = 729.371
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/Assignments/Digital/Project/project.runs/synth_1/DSP48A1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DSP48A1_utilization_synth.rpt -pb DSP48A1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.523 . Memory (MB): peak = 1028.789 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 18 11:15:27 2024...
