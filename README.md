@@ -1,4 +1,4 @@
-Overview
+Overview\n
 The Spartan-6 DSP48A1 is a specialized digital signal processing (DSP) slice found in Xilinx's Spartan-6 family of FPGAs. This module is designed to perform high-performance arithmetic operations, making it an essential building block for applications requiring fast and efficient signal processing, such as telecommunications, video processing, and embedded systems.
 
 Key Features
